@@ -1,0 +1,266 @@
+body,html,#root{
+  min-height: 100%;
+  outline: none;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul,li{
+  padding: 0;
+  list-style: none;
+}
+
+.theme{
+  width: 100%;
+  display: flex;
+
+}
+
+.change__theme{
+  font-family: 'Montserrat', sans-serif;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  margin-right: 5vw;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  transition: all .2s linear;
+}
+.change__theme:hover{
+  color: #000;
+  background: #fff;
+}
+
+.title{
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 35px;
+  transition: all .2s linear;
+}
+
+.line{
+  border: 0;
+  border-bottom: 2px solid #000;
+  box-shadow: 0px 10px 16px#000;
+}
+
+.wrapper{
+  width: 100vw;
+  min-height: 60vh;
+  overflow-x: auto;
+  
+}
+.wrapper::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.wrapper::-webkit-scrollbar-track{
+  background: rgba(204, 204, 204,.2);
+}
+
+.add__board{
+  width: 220px;
+  font-size: 25px;
+  padding: 20px 0px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid #000;
+  transition: all .2s linear;
+  border-radius: 10px;
+}
+
+.add__board:hover{
+  background: #fff;
+  color: #000;
+}
+
+.add__board-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.add__board-input{
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  font-size: 25px;
+  padding: 10px 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.add__board-btn{
+  display: flex;
+  font-size: 25px;
+  padding: 11px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+.add__board-btn:hover{
+  background: #fff;
+  color: #000;
+}
+
+.board__list{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+
+.board{
+  position: relative;
+  min-width: 232px;
+  max-width: 310px;
+  padding: 20px 20px;
+  visibility: visible;
+  margin-right: 20px;
+  align-self: flex-start;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 16px #ccc;
+}
+
+.remove__board{
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: crimson;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 35px;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.board__title-form{
+  margin: 15px 0;
+}
+
+.board__title-input{
+  width: 80%;
+  padding: 5px;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.add__card-form{
+
+}
+
+.add__card-input{
+  font-family: 'Montserrat', sans-serif;
+  width: 74%;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  border: 2px solid #000;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+.add__card-input::placeholder {
+  color: #fff;
+}
+
+.add__card-input:focus{
+  color: #000;
+  background: #fff;
+  cursor: auto;
+}
+
+.card{
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__text{
+  font-size: 18px;
+  word-break: break-all;
+  margin-right: 10px;
+}
+
+.card__remove{
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+  color: crimson;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.edit__card-form{}
+
+.edit__card-input{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 16px;
+  padding: 7px;
+}
+
+@media screen and (max-width: 906px){
+  .board__title{
+    font-size: 1.8em;
+  }
+  .board__title-input{
+    
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .add__board-input{
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+  
+  .add__board-btn{
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .add__board-input{
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+  
+  .add__board-btn{
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+}

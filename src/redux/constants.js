@@ -1,0 +1,6 @@
+export const ADD_BOARD = 'ADD_BOARD'
+export const ADD_CARD = 'ADD_CARD'
+export const REMOVE_BOARD = 'REMOVE_BOARD'
+export const REMOVE_CARD = 'REMOVE_CARD'
+export const EDIT_TITLE = 'EDIT_TITLE'
+export const CHANGE_THEME = 'CHANGE_THEME'
