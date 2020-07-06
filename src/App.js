@@ -65,10 +65,10 @@ function App(props) {
   return (
     <>
     <div className='theme'>
-      <button className='change__theme' onClick={()=>{props.onChangeTheme()}}>Сменить тему</button>
+      <button className='change__theme' onClick={()=>{props.onChangeTheme()}}>Change Theme</button>
     </div>
     
-      <h1 className='title'>Task Manager</h1>
+      <h1 className='title'>Todo Manager</h1>
       {/* <hr className='line'/> */}
       {state
         ?

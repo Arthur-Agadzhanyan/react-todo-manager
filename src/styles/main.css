@@ -226,6 +226,8 @@ ul,li{
 .edit__card-form{}
 
 .edit__card-input{
+  max-width: 170px;
+  border: 1px solid #000;
   font-family: 'Montserrat', sans-serif; 
   font-size: 16px;
   padding: 7px;
